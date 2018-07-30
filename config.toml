@@ -1,0 +1,15 @@
+# Site settings
+baseurl = "http://faqs.nickwhyy.top/"
+languageCode = "zh-CN"
+title = "Lloyd FAQs"
+theme = "hugo-faq-theme"
+
+# Do not build files for websites.
+disableKinds = ["RSS", "sitemap", "404"]
+
+[params]
+	# Custom styling
+	# To customize the styling of this theme, uncomment and edit the following line to point
+	# to your site's css in the assets/ directory.
+
+	custom_css = ["css/GMT_FAQs.css"]

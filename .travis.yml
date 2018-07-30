@@ -1,0 +1,14 @@
+language: generic
+
+install:
+  - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
+  - git submodule update --remote
+
+script:
+  - ./hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ${GH_TOKEN}
+  local_dir: public
