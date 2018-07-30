@@ -1,5 +1,7 @@
-# GMT 中文社区 FAQs
+# Lloyd FAQs
 
-[![Build Status](https://travis-ci.org/gmt-china/GMT_FAQs.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_FAQs)
+[![Build Status](https://travis-ci.org/nicklinyi/faqs.svg?branch=master)](https://travis-ci.org/nicklinyi/faqs)
 
-<https://faqs.gmt-china.org>
+<http://faqs.nickwhyy.top>
+
+
