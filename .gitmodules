@@ -2,3 +2,9 @@
 	path = themes/hugo-faq-theme
 	url = https://github.com/gmt-china/hugo-faq-theme.git
 	branch = master
+[submodule "hugo-faq-theme"]
+	path = hugo-faq-theme
+	url = https://github.com/gmt-china/hugo-faq-theme.git
+[submodule "theme/hugo-faq-theme"]
+	path = theme/hugo-faq-theme
+	url = https://github.com/gmt-china/hugo-faq-theme.git
