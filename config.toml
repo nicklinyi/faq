@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://faqs.nickwhyy.top/"
+baseurl = "https://faqs.nickwhyy.top/"
 languageCode = "zh-CN"
 title = "Lloyd FAQs"
 theme = "hugo-faq-theme"
