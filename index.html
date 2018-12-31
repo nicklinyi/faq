@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+<head>
+	<meta name="generator" content="Hugo 0.50" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://faqs.nickwhyy.top/css/reset.css">
+	<link rel="stylesheet" href="https://faqs.nickwhyy.top/css/style.css">
+	<link rel="stylesheet" href="https://faqs.nickwhyy.top/css/code.css">
+	
+        <link rel="stylesheet" href="https://faqs.nickwhyy.top/css/GMT_FAQs.css">
+    
+	<script src="https://faqs.nickwhyy.top/js/modernizr.js"></script>
+	<title>Lloyd FAQs</title>
+</head>
+<body>
+<header>
+	<h1>Lloyd FAQs</h1>
+</header>
+
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+        
+		<li><a href="#editors">Editors</a></li>
+		
+		<li><a href="#linux">Linux</a></li>
+		
+		<li><a href="#madagascar">Madagascar</a></li>
+		
+		<li><a href="#Office">Office</a></li>
+		
+		<li><a href="#others">Others</a></li>
+		
+		<li><a href="#r">R</a></li>
+		
+		<li><a href="#windows">Windows</a></li>
+		
+	</ul>
+
+	<div class="cd-faq-items">
+        
+		<ul id="editors" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Editors</h2></li>
+            
+            
+			<li id="editors-0">
+				<a class="cd-faq-trigger" href="#editors-0">VS code 显示不可见字符设置</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<ol>
+<li><p>打开<code>文件</code>&mdash;<code>首选项</code>&mdash;<code>设置</code></p></li>
+
+<li><p>在 <code>用户设置</code>添加</p>
+
+<pre><code>&quot;editor.renderControlCharacters&quot;:true,
+&quot;editor.renderWhitespace&quot;:&quot;all&quot;
+</code></pre></li>
+</ol>
+
+<p>参考:
+<a href="https://www.jianshu.com/p/e9ee1de056b2">https://www.jianshu.com/p/e9ee1de056b2</a></p>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+		<ul id="linux" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Linux</h2></li>
+            
+            
+			<li id="linux-0">
+				<a class="cd-faq-trigger" href="#linux-0">Ubuntu误删`/var/lib/dpkg`</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<ul>
+<li><a href="http://www.voidcn.com/article/p-wvtilvzl-bcq.html,此方法可能存在一些问题，">http://www.voidcn.com/article/p-wvtilvzl-bcq.html,此方法可能存在一些问题，</a></li>
+<li>另一种解决方案，就是找一台和你系统一样的机器，把<code>/var/lib/dpkg/*</code> 拷到已删除<code>/var/lib/dpkg</code>目录的目录中去。</li>
+</ul>
+
+<p>参考：<a href="https://linux.cn/article-8040-1.html">https://linux.cn/article-8040-1.html</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="linux-1">
+				<a class="cd-faq-trigger" href="#linux-1">无法获得锁</a>
+				<div class="cd-faq-content">
+					<p><p>更新软件包出现<code>无法获得锁</code>的错误。</p>
+
+<p>解决办法：</p>
+
+<pre><code>https://linux.cn/article-8040-1.html
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+		<ul id="madagascar" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Madagascar</h2></li>
+            
+            
+			<li id="madagascar-0">
+				<a class="cd-faq-trigger" href="#madagascar-0">SCons 指定命名为非`SConstruct`名称的文件</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>`scons -f filename`, `filename`为非`SConstruct`名称的文件。
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+		<ul id="Office" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Office</h2></li>
+            
+            
+			<li id="Office-0">
+				<a class="cd-faq-trigger" href="#Office-0">Excel 每次保存文件都会卡顿，并加载很长时间</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<p><code>文件</code>&ndash;&gt;<code>选项</code>&ndash;&gt;<code>加载项</code>&ndash;&gt;<code>管理COM加载项</code>&ndash;&gt;<code>转到</code>，保留<code>中文转换加载项</code>，去掉其他的 COM 加载项，如果还卡，参见下面的文章：</p>
+
+<p><a href="https://blog.csdn.net/sinat_34104446/article/details/82735277">https://blog.csdn.net/sinat_34104446/article/details/82735277</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-1">
+				<a class="cd-faq-trigger" href="#Office-1">Office经常卡死</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>设置自动保存时间为1min
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-2">
+				<a class="cd-faq-trigger" href="#Office-2">excel 中文排序</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>https://jingyan.baidu.com/article/a3aad71aac78e0b1fb00960e.html
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-3">
+				<a class="cd-faq-trigger" href="#Office-3">word文档插入的图片显示不完全的解决方法</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>https://jingyan.baidu.com/article/a24b33cdb1ba9619fe002bb8.html
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-4">
+				<a class="cd-faq-trigger" href="#Office-4">word设置页眉与上一节不同</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>在word中，设置下一节的页眉的时候，需要回到上一节的最后一个字符，
+</code></pre>
+
+<p>选择word菜单栏的<code>页面布局</code>，然后选择<code>分隔符</code>中的<code>下一页</code>即可。这个
+时候双击当前的页眉处，可以看到左侧上一页和下一页已经属于不同节了，当
+时默认的页眉与上一节相同，这就需要去掉菜单栏中的<code>链接到前一条页眉</code>的
+选中状态。</p>
+
+<p>参考：
+<a href="http://jingyan.baidu.com/article/e52e3615a7b68a40c60c51d8.html">http://jingyan.baidu.com/article/e52e3615a7b68a40c60c51d8.html</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-5">
+				<a class="cd-faq-trigger" href="#Office-5">修改默认字体</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>https://support.office.com/zh-cn/article/%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E5%AD%97%E4%BD%93-8e93c947-c160-4310-8070-afea7da78c33?ui=zh-CN&amp;rs=zh-CN&amp;ad=CN
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-6">
+				<a class="cd-faq-trigger" href="#Office-6">修订模式使用</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>`审阅`-`修订`。 当修订为高亮锁定时，则表示已进入修订模式。
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-7">
+				<a class="cd-faq-trigger" href="#Office-7">右键中新建菜单无 Word 选项</a>
+				<div class="cd-faq-content">
+					<p><p>1.运行<code>regedit</code>打开注册表编辑器
+2.然后在<code>HKEY_CLASSES_ROOT</code>下找到<code>.doc</code>和<code>.docx</code>，右键单击新建项，命名为<code>shellNew</code>，然后在建立的项中新建<code>字符串</code>，命名为<code>NullFile</code>，<code>值</code>为<code>空</code>。</p>
+
+<p>对于Excel(<code>.xls</code>和<code>.xlsx</code>)与PowerPoint(<code>.ppt</code>和<code>.pptx</code>)是一样的操作。
+参考链接：
+<a href="https://answers.microsoft.com/zh-hans/msoffice/forum/msoffice_word-mso_win10-mso_2016/%E5%AE%89%E8%A3%85office2016%E4%B8%93%E4%B8%9A/6db8680e-ee8e-44ea-a520-951bf792af13">https://answers.microsoft.com/zh-hans/msoffice/forum/msoffice_word-mso_win10-mso_2016/%E5%AE%89%E8%A3%85office2016%E4%B8%93%E4%B8%9A/6db8680e-ee8e-44ea-a520-951bf792af13</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-8">
+				<a class="cd-faq-trigger" href="#Office-8">如何打勾</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>http://blog.sciencenet.cn/blog-510679-521385.html
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-9">
+				<a class="cd-faq-trigger" href="#Office-9">德语如何输入</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<p>ö=oe ä=ae ü=ue
+你可以在输入法里面添加德文输入法 ö是字母L右边那个键 ä是ö右边那个键 ü是字母P右边那个键
+另外你也可以去网上其他地方复制 然后粘贴</p>
+
+<p><a href="https://zhidao.baidu.com/question/89859539.html">https://zhidao.baidu.com/question/89859539.html</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="Office-10">
+				<a class="cd-faq-trigger" href="#Office-10">论文公式对齐</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>一般选用右对弃，将编号放在最右侧，然后在公式和编号之间加空格，使得公式移动至中间。
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+		<ul id="others" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Others</h2></li>
+            
+            
+			<li id="others-0">
+				<a class="cd-faq-trigger" href="#others-0">命令行下将m4a文件转换为mp3</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<p><a href="https://www.techforgeek.info/how_to_convert_m4a_to_mp3.html">https://www.techforgeek.info/how_to_convert_m4a_to_mp3.html</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="others-1">
+				<a class="cd-faq-trigger" href="#others-1">如何输出与imagesc(A,[0,0.1])一样的图片，图片的大小为数组的size?</a>
+				<div class="cd-faq-content">
+					<p><ol>
+<li><p>首先A是一个double型的数据，且取值范围在[0.0,0.2],为了将该数据进行增益，因此，对其进行了clip,
+直接采用imagesc(A,[0,0.1])可显示增益后的图，然后保存为图片即可。</p></li>
+
+<li><p>当我们需要保证输出的图片的size为严格的数组的大小的时候，上述方法行不通。因此解决方案是，先手动
+对数据作一个clip;</p>
+
+<pre><code>function [ d] = clip( d, min, max ) 
+d(d &lt; min) = min;
+d(d &gt; max) = max;
+end
+</code></pre></li>
+</ol>
+
+<p>然后，再将clip的数据通过<code>mat2gray</code>正则化到[0,1]区间。最后用<code>imwrite</code>写出来即可:<code>imwrite(mat2gray(clip(A,0,0.1)),'A.jpg')</code></p>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+		<ul id="r" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>R</h2></li>
+            
+            
+			<li id="r-0">
+				<a class="cd-faq-trigger" href="#r-0">R&#39;无法复制安装包到library的问题&#39;</a>
+				<div class="cd-faq-content">
+					<p><p>解决办法：</p>
+
+<pre><code>直接找到下载包的路径，然后手动复制到`library`中即可。此处的`library`为R安装路径下的`library`
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+		<ul id="windows" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Windows</h2></li>
+            
+            
+			<li id="windows-0">
+				<a class="cd-faq-trigger" href="#windows-0">SSH 无法连接 Ubuntu 问题</a>
+				<div class="cd-faq-content">
+					<p><p>在windows 下能 ping 通linux，但 SSH 却连接不上， 如何解决？</p>
+
+<p>解决办法：</p>
+
+<pre><code>http://www.cnblogs.com/noteless/p/5251574.html
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="windows-1">
+				<a class="cd-faq-trigger" href="#windows-1">VS2013 安装错误 Windows 程序兼容性模式已打开</a>
+				<div class="cd-faq-content">
+					<p><p>window 10 下安装VS2013会出现此问题.</p>
+
+<p>解决办法：</p>
+
+<p><a href="http://www.it610.com/article/5024130.htm">http://www.it610.com/article/5024130.htm</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="windows-2">
+				<a class="cd-faq-trigger" href="#windows-2">jupyter notebook 如何指定新的初始路径</a>
+				<div class="cd-faq-content">
+					<p><p>很多答案都是相互抄袭，而且缺少最关键的一步，这里给出最成功的答案</p>
+
+<p>解决办法：</p>
+
+<p><a href="https://blog.csdn.net/yuanxiang01/article/details/79217469">https://blog.csdn.net/yuanxiang01/article/details/79217469</a></p>
+</p>
+				</div>
+			</li>
+            
+            
+			<li id="windows-3">
+				<a class="cd-faq-trigger" href="#windows-3">文件或目录损坏且无法读取</a>
+				<div class="cd-faq-content">
+					<p><p>插入移动硬盘出现 <code>文件或目录损坏且无法读取</code> 的警告。</p>
+
+<p>解决办法：</p>
+
+<pre><code>打开“命令提示符”，在其上输入`chkdsk E: /x /v /f`，这里的`E`代表移动硬盘的盘符。
+</code></pre>
+</p>
+				</div>
+			</li>
+            
+        </ul>
+        
+	</div>
+	<a href="#0" class="cd-close-panel">Close</a>
+</section>
+
+<script src="https://faqs.nickwhyy.top/js/jquery-2.1.1.js"></script>
+<script src="https://faqs.nickwhyy.top/js/jquery.mobile.custom.min.js"></script>
+<script src="https://faqs.nickwhyy.top/js/main.js"></script>
+</body>
+</html>
